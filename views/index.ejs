@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="title">Hacker News</div>
+		<div class="news-container">
+			<% for(let i = 0; i < stories.length; i++) { %>
+			<div class="news-item">
+				<a target="_blank" href="<%=stories[i].link%>">
+					<%= stories[i].title %>
+				</a>
+			</div>
+			<% } %>
+		</div>
+	</body>
+</html>
